@@ -1,0 +1,42 @@
+# Docker Compose files
+docker-compose.yaml
+docker-compose.yml
+docker-compose.override.yaml
+docker-compose.override.yml
+
+# Git files
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if any)
+node_modules/
+
+# Python cache (if any)
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+dist/
+build/
