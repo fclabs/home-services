@@ -7,4 +7,4 @@ RUN apk add --no-cache --update avahi
 EXPOSE 5353
 
 # Start avahi-daemon
-CMD ["avahi-daemon", "--no-drop-root"]
+CMD ["avahi-daemon"]
