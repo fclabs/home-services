@@ -3,6 +3,13 @@ configs:
     content: |
       skull.local = 192.168.10.17
       unifi.local = 192.168.10.9
+  avahi-config:
+    content: |
+      [server]
+      host-name=avahi
+      domain-name=local
+      enable-dbus=no
+      use-ipv6=no
 
 services:
   avahi-daemon:
@@ -12,6 +19,8 @@ services:
     configs:
       - source: avahi-hosts
         target: /etc/avahi/hosts
+      - source: avahi-config
+        target: /etc/avahi/avahi-daemon.conf
     environment:
       - AVAHI_HOST_NAME=avahi-daemon
     network_mode: host
