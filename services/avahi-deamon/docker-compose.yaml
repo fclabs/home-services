@@ -2,6 +2,7 @@ configs:
   avahi-hosts:
     content: |
       skull.local = 192.168.10.17
+      unifi.local = 192.168.10.9:wq
 
 services:
   avahi-daemon:
